@@ -1,0 +1,24 @@
+package com.example.demo.service;
+
+import java.util.concurrent.atomic.AtomicLong;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.Model.Person;
+
+@Service
+public class PersonService {
+	
+	private final AtomicLong counter=new AtomicLong();
+	
+	public Person findById(String id) {
+		
+		Person person=new Person();
+		person.setId(counter.getAndIncrement());
+		person.setName("Oliver queen");
+		person.setAddress("Starling city");
+		
+		return person;
+	}
+
+}
