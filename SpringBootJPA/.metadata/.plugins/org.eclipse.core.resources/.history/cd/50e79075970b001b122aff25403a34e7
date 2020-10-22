@@ -1,0 +1,5 @@
+package com.example.demo.ui.modal.response;
+
+public class UserRest {
+
+}

@@ -1,0 +1,19 @@
+package com.example.demo.shared.dto;
+
+import java.io.Serializable;
+
+public class UserDto implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	private int id;
+	private String userid;
+	private String uname;
+	private String password;
+	private String email;
+
+	private String encryptedpassword;
+	private Boolean emailverificationtoken=false;
+
+
+
+}

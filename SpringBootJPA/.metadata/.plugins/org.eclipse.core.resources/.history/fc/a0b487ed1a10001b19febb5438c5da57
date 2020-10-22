@@ -1,0 +1,15 @@
+package com.example.demo.ui.modal.response;
+
+public class UserRest {
+
+	private String userid;
+	private String uname;
+	private String email;
+
+	public String getUserid() {
+		return userid;
+	}
+
+
+
+}

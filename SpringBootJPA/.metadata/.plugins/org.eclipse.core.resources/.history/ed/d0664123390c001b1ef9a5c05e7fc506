@@ -1,0 +1,33 @@
+package com.example.demo.io.entity;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity(name="userdetail")
+public class UserEntity implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue
+	int id;
+	
+	private String userid;
+	@Column(nullable=false, length=50)
+	private String uname;
+	
+	@Column(nullable=false, length=50)
+	private String email;
+	
+	@Column(nullable=false, length=50)
+	private String password;
+	private String encryptedpassword;
+	private String emailverificationtoken;
+	private String emailverificationstatus;
+	
+
+}

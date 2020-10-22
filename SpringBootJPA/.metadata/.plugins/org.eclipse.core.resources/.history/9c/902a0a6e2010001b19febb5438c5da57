@@ -1,0 +1,16 @@
+package com.example.demo.shared.utils;
+
+import java.util.UUID;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Utils {
+
+	String getUniqueId()
+	{
+		UUID uid = UUID.randomUUID();
+		return String.valueOf(uid);
+	}
+
+}
